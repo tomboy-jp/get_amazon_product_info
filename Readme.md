@@ -33,8 +33,8 @@ pythonのコードにベタ書きしてもいいのですが、うっかりコ�
 ```
 $ brew install forego
 ```
-続いて「.env」ファイルを作成します。  
-必ず実行コードと同じ場所に作ってください。  
+  続いて「.env」ファイルを作成します。  
+  必ず実行コードと同じ場所に作ってください。  
 ```
 $ echo "AMAZON_ACCESS_KEY=$あなたのアクセスキー" >> .env
 $ echo "AMAZON_SECRET_KEY=$あなたのシークレットキー" >> .env
@@ -44,15 +44,15 @@ $ echo "AMAZON_ASSOCIATE_TAG=$あなたのアソシエイトタグ" >> .env
 ```
 $ echo ".env" >> .gitignore
 ```
-これで認証周りの準備は完了です。
+  これで認証周りの準備は完了です。
 
 4. 今回Pythonコードで使用するモジュールをインストールします。  
 ```
 $ pip install python-amazon-simple-product-api
 ```
-URLの作成とxmlのパースを自動化してくれる強力なモジュールです。  
-今回は使用しませんが、AmazonAPI & Python関連では他に有名なものとして「bottlenose」があります。  
-「python-amazon-simple-product-api」の元にもなっているモジュールで、出来る範囲が広い分、スクレイピングは別途行う必要があるなど詳細なコーディングを求められます。  
+  URLの作成とxmlのパースを自動化してくれる強力なモジュールです。  
+  今回は使用しませんが、AmazonAPI & Python関連では他に有名なものとして「bottlenose」があります。  
+  「python-amazon-simple-product-api」の元にもなっているモジュールで、出来る範囲が広い分、スクレイピングは別途行う必要があるなど詳細なコーディングを求められます。  
 
 5. 必要な手順は以上です。  
 あとはサンプルコード[サンプルコード](https://github.com/tomboy-jp/get_amazon_product_info/blob/master/get_item.py)をご覧ください。
